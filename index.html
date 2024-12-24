@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkcode Responsive UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-thin {
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .poppins-extralight {
+        font-family: "Poppins", serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+
+      .poppins-light {
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .poppins-regular {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .poppins-medium {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .poppins-semibold {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .poppins-bold {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .poppins-extrabold {
+        font-family: "Poppins", serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+      }
+
+      .wrapper {
+        width: 90%;
+        max-width: 1536px;
+        margin-inline: auto;
+        position: relative;
+        height: 100px;
+        margin-top: 5rem;
+        overflow: hidden;
+        mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0)
+        );
+      }
+
+      @keyframes scrollLeft {
+        to {
+          left: -200px;
+        }
+      }
+
+      .item {
+        width: 200px;
+        height: 100px;
+        border-radius: 6px;
+        position: absolute;
+        left: max(calc(200px * 8), 100%);
+        animation-name: scrollLeft;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      .item1 {
+        animation-delay: calc(30s / 8 * (8 - 1) * -1);
+      }
+
+      .item2 {
+        animation-delay: calc(30s / 8 * (8 - 2) * -1);
+      }
+
+      .item3 {
+        animation-delay: calc(30s / 8 * (8 - 3) * -1);
+      }
+
+      .item4 {
+        animation-delay: calc(30s / 8 * (8 - 4) * -1);
+      }
+
+      .item5 {
+        animation-delay: calc(30s / 8 * (8 - 5) * -1);
+      }
+
+      .item6 {
+        animation-delay: calc(30s / 8 * (8 - 6) * -1);
+      }
+
+      .item7 {
+        animation-delay: calc(30s / 8 * (8 - 7) * -1);
+      }
+
+      .item8 {
+        animation-delay: calc(30s / 8 * (8 - 8) * -1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans min-h-screen overflow-x-hidden">
+    <section>
+      <div
+        class="max-w-full mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
+      >
+        <div
+          class="bg-blue-100 max-[386px]:p-2 xl:h-[9vw] xl:mt-[-1vw] xl:relative"
+        >
+          <div class="m-[2vw] xl:my-7 xl:absolute">
+            <div
+              class="max-[386px]:w-[50vw] xl:w-[15vw] xl:mx-[39vw] max-[386px]:mx-20"
+            >
+              <img src="logo.png" alt="logo" />
+            </div>
+            <h1
+              class="max-[386px]:mx-[14.95vw] max-[386px]:my-2 max-[386px]:text-[4.5vw] text-[#004aad] xl:text-2xl xl:my-2 xl:mx-[35vw] font-semibold italic"
+            >
+              Linking To The Corporate World
+            </h1>
+          </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="m-4 xl:relative">
+          <h1 class="text-center mb-2 text-lg poppins-semibold">
+            IT Training & Placement Center
+          </h1>
+          <div
+            class="flex max-[386px]:justify-around xl:mx-[4vw] xl:gap-4 xl:mt-[26vw] max-[386px]:flex-row max-[386px]:gap-2 text-center"
+          >
+            <div
+              class="bg-gradient-to-r from-[#1c71bf] to-[#45b1ff] text-white poppins-medium tracking-normal max-[386px]:w-[80px] xl:w-[7vw] xl:p-2 xl:h-[5vw] max-[386px]:h-20"
+            >
+              <p class="font-semibold max-[386px]:text-[6vw] xl:text-2xl mt-1">
+                15 +
+              </p>
+              <p class="max-[386px]:text-[5vw] xl:text-2xl font-semibold -mt-2">
+                Years
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-r from-[#3d8b1c] to-[#59bd31] text-white text-center poppins-medium tracking-normal xl:p-2 max-[386px]:w-[85px] xl:w-[7vw] xl:h-[5vw] max-[386px]:h-20"
+            >
+              <p
+                class="font-bold max-[386px]:text-[6vw] xl:text-2xl xl:mt-[-0.3vw] mt-[0.6vw]"
+              >
+                20K+
+              </p>
+              <p class="max-[380px]:text-[4vw] xl:-mt-1 -mt-1 leading-5">
+                Students Trained
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-r from-[#1c71bf] to-[#45b1ff] text-white poppins-medium tracking-normal xl:w-[7vw] xl:p-2.5 xl:h-[5vw] max-[386px]:w-24 max-[386px]:h-20"
+            >
+              <p
+                class="font-bold max-[386px]:text-[6vw] xl:mt-[-0.6vw] xl:text-2xl"
+              >
+                60LPA
+              </p>
+              <p class="text-[14px] -mt-[5px] leading-4">
+                Highest Package Received
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-r from-[#3d8b1c] to-[#59bd31] text-white poppins-medium tracking-normal xl:w-[7vw] xl:h-[5vw] xl:p-2 max-[386px]:w-24 max-[386px]:h-20"
+            >
+              <p class="font-bold max-[386px]:text-[6vw] xl:text-2xl">5K+</p>
+              <p class="text-[14px] leading-4">Students Placed</p>
+            </div>
+          </div>
+
+          <!-- Trust Section -->
+          <div
+            class="max-[386px]:w-[70vw] xl:relative max-[386px]:-mt-[20vw] max-[386px]:-ml-[23vw]"
+          >
+            <img
+              src="badge.png"
+              alt="15 Years Trust Badge"
+              class="max-[386px]:mx-[2vw] max-[386px]:w-[70vw] xl:w-[25vw] xl:mx-[100vw] xl:-my-[20vw]"
+            />
+            <div>
+              <h1
+                class="text-lg xl:text-2xl max-[386px]:mx-24 xl:block xl:mx-[35vw] xl:mt-[-23vw] xl:left-[-25%] xl:absolute w-full poppins-bold antialiased max-[386px]:-mt-[5vw] font-medium leading-4 tracking-tighter"
+              >
+                <span class="text-blue-500">G</span>
+                <span class="text-red-500">o</span>
+                <span class="text-yellow-500">o</span>
+                <span class="text-blue-500">g</span>
+                <span class="text-green-500">l</span>
+                <span class="text-red-500">e</span>
+              </h1>
+            </div>
+            <h1
+              class="mx-[50vw] xl:-mt-[26vw] xl:hidden xl:left-[-32.5%] xl:text-xl xl:absolute text-lg max-[386px]:-my-[22px] tracking-wide"
+            >
+              Reviews
+            </h1>
+            <div
+              class="flex items-center xl:absolute xl:top-[-23vw] xl:-left-[15%] ml-[25vw] my-[5vw]"
+            >
+              <!-- Full stars -->
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+              <svg
+                class="w-6 h-6 text-yellow-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
+              </svg>
+
+              <!-- Half star -->
+              <div class="relative w-6 h-6">
+                <svg
+                  class="absolute w-6 h-6 text-gray-300"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                <div class="absolute w-3 h-6 overflow-hidden">
+                  <svg
+                    class="w-6 h-6 text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex mx-20 xl:absolute xl:top-[-18.5vw] xl:-left-[5%] -my-3"
+            >
+              <img src="iso.png" width="70vw" alt="" />
+              <img src="msme.png" width="70vw" alt="" />
+            </div>
+            <div class="max-[386px]:relative w-[100vw] mx-[38vw] -my-[52vw]">
+              <div class="absolute text-black z-10">
+                <ul
+                  class="max-[386px]:mt-[68vw] xl:mt-[14vw] xl:mx-[-34vw] font-bold poppins-bold mx-[-17vw]"
+                >
+                  <li
+                    class="text-sm xl:bg-gradient-to-r from-[#3d8b1c] to-[#59bd31] xl:bg-clip-text xl:text-transparent xl:text-2xl xl:w-fit flex items-center p-2 w-60 bg-white shadow-lg mb-4"
+                  >
+                    100% Placement Assistance
+                  </li>
+                  <li
+                    class="text-sm xl:bg-gradient-to-r from-[#1c71bf] to-[#45b1ff] xl:bg-clip-text xl:text-transparent xl:text-2xl xl:w-fit flex items-center p-2 bg-white -mt-2 w-72 shadow-lg mb-4"
+                  >
+                    Offline Classroom + Industry-Oriented Hands-On Training
+                  </li>
+                  <li
+                    class="text-sm xl:bg-gradient-to-r from-[#3d8b1c] to-[#59bd31] xl:bg-clip-text xl:text-transparent xl:text-2xl xl:w-fit flex items-center p-2 w-72 -mt-2 bg-white shadow-lg mb-4"
+                  >
+                    Online Live Training + Recorded Sessions for Revision
+                  </li>
+                  <li
+                    class="text-sm xl:bg-gradient-to-r from-[#1c71bf] to-[#45b1ff] xl:bg-clip-text xl:text-transparent xl:text-2xl xl:w-fit flex items-center p-2 w-82 -mt-2 bg-white shadow-lg mb-4"
+                  >
+                    Internship with Stipend + Work on Live Projects
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative z-0">
+                <img
+                  src="home-bg-removebg-preview.png"
+                  class="max-[386px]:my-16 max-[386px]:w-[85vw] max-[386px]:mx-5 max-[386px]:h-[120vw] xl:mx-[25vw] xl:my-[12vw]"
+                  alt=""
+                />
+
+                <img
+                  src="bg_shape.png"
+                  class="mx-[-20vw] h-[75vw] xl:hidden -my-[85vw] w-full"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Features Section -->
+        </div>
+        <div
+          class="border border-[#3d8b1c] border-t-2 mt-[53vw] opacity-20"
+        ></div>
+
+        <section class="xl:flex">
+          <div id="left" class="container px-4">
+            <!-- Title Section -->
+            <div id="title" class="my-8 md:my-12 xl:m-20">
+              <h1
+                class="poppins-bold text-2xl md:text-3xl xl:text-4xl border-2 md:border-4 p-2 border-[#3d8b1c] w-fit mx-auto md:mx-0"
+              >
+                Why Choose Us?
+              </h1>
+            </div>
+
+            <!-- Features Grid -->
+            <div
+              id="features"
+              class="grid xl:absolute xl:top-[55vw] grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 my-8 md:my-12 xl:m-20"
+            >
+              <!-- Feature 1 -->
+              <div class="flex flex-col items-center">
+                <img
+                  class="w-32 sm:w-40 md:w-48 xl:w-[10vw] mb-4"
+                  src="icon_1.png"
+                  alt=""
+                />
+                <h2
+                  class="font-semibold text-center w-full max-w-[200px] xl:w-24 xl:mx-7"
+                >
+                  Experienced and Certified Trainers.
+                </h2>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="flex flex-col items-center">
+                <img
+                  class="w-32 sm:w-40 md:w-48 xl:w-[10vw] mb-4"
+                  src="icon_2.png"
+                  alt=""
+                />
+                <h2
+                  class="font-semibold text-center w-full max-w-[200px] xl:w-[130px] xl:mx-3"
+                >
+                  Internship opportunities with real clients.
+                </h2>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="flex flex-col items-center">
+                <img
+                  class="w-32 sm:w-40 md:w-48 xl:w-[10vw] mb-4"
+                  src="icon_3.png"
+                  alt=""
+                />
+                <h2
+                  class="font-semibold text-center w-full max-w-[200px] xl:w-28 xl:mx-4"
+                >
+                  Support and Career guidance.
+                </h2>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="flex flex-col items-center">
+                <img
+                  class="w-32 sm:w-40 md:w-48 xl:w-[10vw] mb-4"
+                  src="icon_4.png"
+                  alt=""
+                />
+                <h2
+                  class="font-semibold text-center w-full max-w-[200px] xl:w-28 xl:mx-5"
+                >
+                  Hands-on projects from Day one
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div id="right" class="xl:relative">
+            <div class="xl:m-20 xl:absolute xl:-left-[50vw]">
+              <h1
+                class="poppins-bold xl:text-4xl border border-4 p-2 border-[#3d8b1c] w-fit"
+              >
+                Vision
+              </h1>
+              <div
+                class="max-w-4xl xl:absolute xl:w-[35vw] p-6 space-y-6 xl:-mx-7"
+              >
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                  <ul class="space-y-6">
+                    <li class="flex items-start space-x-3">
+                      <div class="flex-shrink-0">
+                        <div
+                          class="w-2 h-2 mt-2 bg-blue-500 rounded-full"
+                        ></div>
+                      </div>
+                      <div>
+                        <h3 class="font-bold text-lg text-blue-600">
+                          Empower Aspiring Developers
+                        </h3>
+                        <p class="text-gray-700">
+                          Serve as a trusted support system for every individual
+                          striving to build a successful career in software
+                          development.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="flex items-start space-x-3">
+                      <div class="flex-shrink-0">
+                        <div
+                          class="w-2 h-2 mt-2 bg-blue-500 rounded-full"
+                        ></div>
+                      </div>
+                      <div>
+                        <h3 class="font-bold text-lg text-blue-600">
+                          Set Industry Standards
+                        </h3>
+                        <p class="text-gray-700">
+                          Lead by example in the training and placement field,
+                          redefining excellence in development education.
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="flex items-start space-x-3">
+                      <div class="flex-shrink-0">
+                        <div
+                          class="w-2 h-2 mt-2 bg-blue-500 rounded-full"
+                        ></div>
+                      </div>
+                      <div>
+                        <h3 class="font-bold text-lg text-blue-600">
+                          Inspire Innovation
+                        </h3>
+                        <p class="text-gray-700">
+                          Foster a learning environment that nurtures
+                          creativity, technical expertise, and innovation in
+                          aspiring developers.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-[30vw] w-full">
+          <h1
+            class="poppins-medium text-[2.5vw] text-center bg-gradient-to-r from-[#3d8b1c] to-[#45b1ff] bg-clip-text text-transparent"
+          >
+            Companies our Candidates Are Placed In
+          </h1>
+          <div class="wrapper">
+            <div class="item item1">
+              <img src="barclays.png" width="85%" class="m-4 -mt-1" alt="" />
+            </div>
+            <div class="item item2">
+              <img src="linkedin.png" width="85%" class="-mt-12" alt="" />
+            </div>
+            <div class="item item3">
+              <img src="sap.png" width="70%" class="-mt-4" alt="" />
+            </div>
+            <div class="item item4">
+              <img
+                src="Cognizant-Logo.jpg"
+                width="85%"
+                class="m-4 -mx-4"
+                alt=""
+              />
+            </div>
+            <div class="item item5">
+              <img src="brillio.png" width="70%" class="m-4" alt="" />
+            </div>
+            <div class="item item6">
+              <img src="accenture.png" width="85%" class="-mt-3" alt="" />
+            </div>
+            <div class="item item7">
+              <img src="infosys.png" width="85%" class="m-4" alt="" />
+            </div>
+            <div class="item item8">
+              <img src="persistent.png" width="85%" class="m-4 mt-5" alt="" />
+            </div>
+          </div>
+        </section>
+        <div class="border border-[#3d8b1c] border-t-2 mt-9 opacity-20"></div>
+        <section class="">
+          <div class="relative -mx-12" id="stepstosucess">
+            <h1
+              class="poppins-bold absolute top-[-5vw] left-[18vw] text-2xl md:text-3xl xl:text-4xl border-2 md:border-4 p-2 border-[#3d8b1c] w-fit md:mx-0"
+            >
+              Step To Success
+            </h1>
+            <img
+              src="stepstosucess.png"
+              class="xl:mt-36 xl:-mx-10 xl:w-[60%]"
+              alt=""
+            />
+          </div>
+          <div
+            class="border relative max-[386px]:hidden border-[#3d8b1c] border-t-2 mt-9 opacity-20 rotate-90 w-[52vw]  xl:mt-[-15vw] xl:ml-[26vw]"
+          ></div>
+          <div id="successrun" class="xl:mx-[30vw] xl:mt-44">
+            <h1
+              class="poppins-bold max-[386px]:w-fit xl:mx-[30vw] xl:-mt-[33.5vw] text-2xl md:text-3xl xl:text-4xl border-2 md:border-4 p-2 border-[#3d8b1c] xl:w-[30vw] md:mx-0"
+            >
+              Project Based Learning
+            </h1>
+            <img
+              src="successrun.png"
+              class="xl:mx-[34vw] xl:mt-10 xl:w-[50%]"
+              alt=""
+            />
+          </div>
+        </section>
+        <!-- Footer -->
+        <div class="bg-blue-100 text-center py-2 mt-[85vw]">
+          <a
+            href="https://www.linkcode.in"
+            class="text-blue-800 font-bold text-sm"
+            >www.linkcode.in</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
